@@ -14,7 +14,7 @@ class Binary:
             if j>=0:
                 total=total+int(b[j])
                 j-=1
-            caryy=total//2
+            carry=total//2
             result.append(str(total%2))
         return "".join(result[::-1])
             
