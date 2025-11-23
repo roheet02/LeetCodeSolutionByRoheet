@@ -8,12 +8,12 @@ class Solution:
     def findtarget(self,root,k):
         ls=set()
         def dfs(node):
-            if not node:
+            if not node:   #check whether node is present it or not 
                 return False
-            if (k-node.val) in ls:
+            if (k-node.val) in ls: #do traverse and append in above list
                 return True
             ls.add(node.val)
-            return dfs(node.left) or dfs(node.right)
+            return dfs(node.left) or dfs(node.right) #and change node either left or right 
         return dfs(root)
 
 root = TreeNode(5)
