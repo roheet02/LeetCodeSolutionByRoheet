@@ -20,4 +20,4 @@ class Binary:
             
 
 result=Binary().addBinaryNumbers("12","22")
-print(result)
+print(result) 
