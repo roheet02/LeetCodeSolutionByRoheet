@@ -5,13 +5,13 @@ class TreeNode:
         self.val=val
         self.left=left
         self.right=right
-
+#solution
 class Solution():
     def isSymmetric(self,root):
         if not root:
             return True
         return self.isMirror(root.left,root.right)
-    
+    #helper function to check whether tree is mirror ot not and we are using recursion here 
     def isMirror(self,left,right):
         if not left and not right:
             return True
