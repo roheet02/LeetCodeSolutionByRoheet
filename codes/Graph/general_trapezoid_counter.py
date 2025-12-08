@@ -1,3 +1,5 @@
+#count any trapezoid where one side should parallel to other at any angle
+
 class Solution:
     def countTrapezoids(self, points: List[List[int]]) -> int:
         """
