@@ -1,4 +1,7 @@
-
+#Users start online, but an OFFLINE event makes a user go offline for 60 time units.
+#MESSAGE events list mentions: idX (specific user), ALL (everyone), or HERE (only online users).
+#Before handling a message at time T, first update any users who come back online at time T.
+#Count how many times each user is mentioned and return the totals.
 
 class Solution:
     def countMentions(self, numberOfUsers, events):
