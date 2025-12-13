@@ -5,7 +5,7 @@
 #isActive[i]: a boolean indicating whether the coupon is currently active.
 
 
-
+##Coupon Code Validator
 class Solution:  
     def validateCoupons(self, code, businessLine, isActive):
 
