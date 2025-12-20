@@ -5,8 +5,8 @@ class Solution():
         deletions=0
         rows=len(strs)
         cols=len(strs[0])
-        for i in range(cols):
-            for j in range(rows-1):
+        for i in range(cols): #check each columns
+            for j in range(rows-1): #compare rows vertically
                 if strs[j][i]>strs[j+1][i]:
                     deletions+=1
                     break
