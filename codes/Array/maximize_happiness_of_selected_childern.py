@@ -5,6 +5,7 @@ class Solution:
         happiness.sort(reverse=True)
         total=0
         for i in range(k):
+            #each previous pick reduces happiness by 1
             total+=max(happiness[i]-i,0)
         return total
 print(Solution().maximizeHappinesOfChildren([1,2,3],2))
