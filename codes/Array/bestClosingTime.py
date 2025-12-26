@@ -1,5 +1,4 @@
 #Minimum Penalty for a Shop
-
 class Solution:
     def bestClosingTime(self,customers):
         n=len(customers)
@@ -16,7 +15,6 @@ class Solution:
                 min_penalty=penalty
                 best_hour=i+1
         return best_hour
-
 print(Solution().bestClosingTime("YYNY"))
 print(Solution().bestClosingTime("YYYY"))
 print(Solution().bestClosingTime("NNNNN"))
