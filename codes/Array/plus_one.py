@@ -1,0 +1,5 @@
+#plus one
+class Solution:
+    def plusOne(self, digits):
+        return list(map(int,str(int(''.join(map(str,digits))) + 1)))
+print(Solution().plusOne([123]))
